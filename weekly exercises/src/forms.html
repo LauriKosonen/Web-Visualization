@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Speaker Submission</title>
+    <link rel="stylesheet" href="forms.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #85b6ff;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="css-library.html">4 CSS Libraries</a>
+              <a class="nav-link" href="web-typography.html">5 Web Typography</a>
+              <a class="nav-link active" aria-current="page" href="#">6 HTML Forms vs CSS Library Forms</a>
+              <a class="nav-link" href="#">7 CSS3 Advanced</a>
+              <a class="nav-link" href="#">8 CSS pre-Processors</a>
+              <a class="nav-link" href="#">9 CSS Animations</a>
+              <a class="nav-link" href="#">10 SVG Illustrations</a>
+            </div>
+          </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <div>
+            <img src="img/Blue_background.jpg" class="img-fluid" alt="Blue banner">
+        </div>
+      </div>
+
+    <section class="container text-center">
+        <div class="row">
+        <!-- Info --> 
+          <div class="col" style="text-align: left; padding-top: 4em;">
+            <!-- Form 1 (Manual)-->
+            <h2>Manual</h2>
+            <form action='' method='get' class='speaker-form'>
+                <div class='form-row'>
+                    <label for='full-name'>Name</label>
+                    <input id='full-name' name='full-name' type='text'/>
+                    <!--email input-->
+                    <div class='form-row'>
+                        <label for='email'>Email</label>
+                        <input id='email'
+                               name='email'
+                               type='email'
+                               placeholder='joe@example.com'/>
+                      </div>
+                      <!--radio buttons. tyylit ei toimi jostain syystä-->
+                      <fieldset class='legacy-form-row'>
+                        <legend>Type of Talk</legend>
+                        <input id='talk-type-1'
+                               name='talk-type'
+                               type='radio'
+                               value='main-stage' />
+                        <label for='talk-type-1' class='radio-label'>Main Stage</label>
+                        <input id='talk-type-2'
+                               name='talk-type'
+                               type='radio'
+                               value='workshop'
+                               checked />
+                        <label for='talk-type-2' class='radio-label'>Workshop</label>
+                      </fieldset>
+                      <!-- dropdown-->
+                      <div class='form-row'>
+                        <label for='t-shirt'>T-Shirt Size</label>
+                        <select id='t-shirt' name='t-shirt'>
+                          <option value='xs'>Extra Small</option>
+                          <option value='s'>Small</option>
+                          <option value='m'>Medium</option>
+                          <option value='l'>Large</option>
+                        </select>
+                      </div>
+                      <!--text area-->
+                      <div class='form-row'>
+                        <label for='abstract'>Abstract</label>
+                        <textarea id='abstract' name='abstract'></textarea>
+                        <div class='instructions'>Describe your talk in 500 words or less</div>
+                      </div>
+                      <!-- check boxes-->
+                      <div class='form-row'>
+                        <label class='checkbox-label' for='available'>
+                        <input id='available'
+                               name='available'
+                               type='checkbox'
+                               value='is-available'/>
+                        <span>I’m actually available the date of the talk</span>
+                        </label>
+                      </div>
+                      <!--submit-->
+                      <div class='form-row'>
+                        <button>Submit</button>
+                      </div>
+                  </div>
+            </form>
+          </div>
+        <!-- Form 2 with css libraries -->
+          <div class="col" style="text-align: left; padding-top: 4em;">
+            <h2>CSS libraries</h2>
+            <form>
+                <div class="row mb-3">
+                    <label for="inputText3" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputPassword3">
+                    </div>
+                  </div>
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <!-- Radio buttons-->
+                <fieldset class="row mb-3">
+                  <legend class="col-form-label col-sm-2 pt-0">Type of talk</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Main Stage
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Workshop
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                <!-- Dropdown-->
+                <div class="row">
+                    <label for="talkType" class="col-sm-2 col-form-label">T-Shirt Size</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" id="talkType" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Small</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Large</option>
+                        </select>
+                    </div>
+                </div>
+                <!--Text area-->
+                <div class="row" style="margin-top: 1em;">
+                    <label for="tshirtSize" class="col-sm-2 col-form-label">Abstract</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div style="color: #999999; font-size: 14px; margin-bottom: 30px; margin-left: 120px;">
+                        Describe your talk in 500 words or less
+                    </div>
+                </div>
+                <!-- Check box-->
+                <div class="row mb-3">
+                    <label for="empty" class="col-sm-2 col-form-label"></label>
+                    <div class="col-sm-offset-2 col-sm-8">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                I'm actually available the date of the talk
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-14">
+                        <label for="empty" class="col-sm-2 col-form-label"></label>
+                        <button type="submit" class="btn btn-primary" style="margin-top: 1em;">Submit</button>
+                    </div>
+                </div>
+              </form>
+          </div>
+        </div>
+    </section>
+
+    <!-- Mietteitä: formin tekeminen css kirjaston kanssa oli nopeampaa koska pystyin suoraan bootstrapin sivuilta
+    kopioimaan pohjan ja sen jälkeen lisäilemään tarvittavia osia kopioimalla ne suoraan bootstrapin sivuilta.
+    Otsikoiden saamiseen samale riville teksti kenttien kanssa jouduin kuitenkin käyttämään omia html ja css taitojani.
+    Lisäksi margineiden ja elementtien koiden muuttamiseen käytin omia taitojani.
+    Manuaalisesti formin tekeminen onnistui myös suht helposti kopioimalla ohjetta,
+    mutta jos ilman ohjeita pitäisi lähteä tekemään niin css kirjaston avulla tekeminen vaikuttaa helpommalta.-->
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
