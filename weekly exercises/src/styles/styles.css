@@ -1,0 +1,39 @@
+@import "variables.css";
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.container {
+
+    display: flex;
+
+}
+
+
+.card {
+
+    margin: 30px;
+    width: var(--card-width);
+    background-color: var(--card-bg-color);
+    color: var(--card-main-color);
+    padding: var(--card-padding);
+    box-shadow: var(--card-shadow-h-offset) var(--card-shadow-v-offset) var(--card-shadow-blur) rgba(50, 236, 249, 0.651);
+
+    /* Call variables here */
+
+}
+
+
+/* Here you can make media queries. (At least one!!) */
+@media only screen and (max-width: 700px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 100%;
+    }
+  }
