@@ -1,0 +1,68 @@
+// main.sass
+@import 'colors';
+@import 'typography';
+@import 'mixins';
+
+body {
+    margin: 20px;
+}
+
+@mixin navigation-styles {
+    ul {
+      list-style: none;
+      padding: 5px;
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        a {
+          color: $font-color;
+          text-decoration: none;
+          &.highlighted-text {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+  }
+  
+  nav {
+    background-color: $primary-color;
+    @include navigation-styles;
+  }
+  
+  header {
+    h1 {
+      color: $font-heading-color;
+    }
+    nav {
+      @include navigation-styles;
+    }
+  }
+
+footer {
+    span {
+      color: $font-color;
+    }
+    ul {
+      padding: 5px;
+      li {
+        display: inline-block;
+        margin-right: 20px;
+        a {
+          color: $font-color;
+        }
+      }
+    }
+  }
+  
+  span {
+    @extend span;
+  }
+  
+  ul {
+    @extend ul;
+  }
+  
+  li {
+    @extend li;
+  }

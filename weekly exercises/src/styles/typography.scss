@@ -1,0 +1,22 @@
+// _typography.scss
+@import 'colors';
+@import 'mixins';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1, h2, h3 {
+    color: $font-heading-color;
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+
+  .blockquote {
+    @include highlighted-text;
+    border-left: 2px solid $accent-color;
+    padding-left: 10px;
+  }

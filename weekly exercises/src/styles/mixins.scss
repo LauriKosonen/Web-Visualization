@@ -1,0 +1,5 @@
+// _mixins.scss
+@mixin highlighted-text {
+    color: $accent-color;
+    font-weight: bold;
+  }
