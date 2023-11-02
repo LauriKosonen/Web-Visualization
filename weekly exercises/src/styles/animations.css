@@ -1,0 +1,38 @@
+.button-circle {
+    cursor: pointer;
+}
+
+.button-circle circle {
+    transition: fill 0.3s;
+}
+
+.button-circle circle:hover {
+    fill: #993030;
+}
+
+.button-circle circle:active {
+    fill: #7f2525;
+}
+
+.animated-svg {
+    animation: spin 5s infinite;
+    transform-origin: center;
+}
+
+@keyframes spin {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    25% {
+        transform: scale(0.5) rotate(45deg);
+    }
+    50% {
+        transform: scale(1) rotate(90deg);
+    }
+    75% {
+        transform: scale(0.5) rotate(135deg);
+    }
+    100% {
+        transform: scale(1) rotate(180deg);
+    }
+}
