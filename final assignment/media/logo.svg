@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="87.969566mm"
+   height="90.073326mm"
+   viewBox="0 0 87.969566 90.073326"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#000000"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#707070"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:export-bgcolor="#61616100">
+    <inkscape:grid
+       id="grid1"
+       units="mm"
+       originx="-249.50632"
+       originy="-384.18603"
+       spacingx="0.99999998"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <color-profile
+       name="Agfa-:-Swop-Standard"
+       xlink:href="../../../../../../../../../Windows/system32/spool/drivers/color/RSWOP.icm"
+       id="color-profile1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-66.015215,-101.64922)">
+    <path
+       id="path4"
+       style="fill:none;stroke:#ffffff;stroke-width:6.70115"
+       d="m 110,104.99979 a 40.634075,41.685883 0 0 0 -29.930986,13.58935 l 14.93914,7.60264 A 25.455381,25.455378 0 0 1 110,121.23033 a 25.455381,25.455378 0 0 1 25.4553,25.45581 25.455381,25.455378 0 0 1 -0.006,0.0873 l 14.45131,7.35459 a 40.634075,41.685883 0 0 0 0.73381,-7.44192 A 40.634075,41.685883 0 0 0 110,104.99979 Z M 70.737801,136.23354 A 40.634075,41.685883 0 0 0 69.365792,146.68614 40.634075,41.685883 0 0 0 110,188.37196 40.634075,41.685883 0 0 0 141.84819,172.42358 l -14.36657,-7.31169 A 25.455381,25.455378 0 0 1 110,172.14143 25.455381,25.455378 0 0 1 84.54471,146.68614 25.455381,25.455378 0 0 1 84.780872,143.3804 Z" />
+    <circle
+       style="fill:#ffffff;stroke:#ffffff;stroke-width:5.29167"
+       id="path5"
+       cx="110.00001"
+       cy="146.68588"
+       r="12.5" />
+  </g>
+</svg>
