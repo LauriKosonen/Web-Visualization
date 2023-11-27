@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background-container {
+    background-image: url('./media/login_background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.loginContainer {
+    background-color: white;
+    width: 40%;
+    margin-top: 10em;
+    border: 1px solid #ff5959;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    border-radius: 2em;
+}
+
+.loginEmail {
+    border-radius: 2em;
+    border: 1px solid #ff5959;
+}
+
+.loginButton {
+    background-color: #ff5959;
+    color: white;
+    border-radius: 2em;
+
+}
+
+.loginCancel {
+    border-color: #ff5959;
+    color:#ff5959;
+    border-radius: 2em;
+}
+
+.form-control:focus {
+    border-color: #ff5959;
+    box-shadow: 0 0 0 0.2rem rgba(255, 89, 89, 0.25);
+}
+
+.custom-control-input {
+    border-color: #ced4da;
+}
+
+.custom-control-input:checked {
+    border-color: #ff5959;
+    background-color: #ff5959;
+}
+
+/* Footer */
+.loginFooter {
+    background-color: #ff5959;
+}
+    
+
+/* tabletti */
+@media screen and (max-width: 1000px) {
+    .loginContainer {
+        width: 100%;
+        margin-top: 10em;
+    }
+}
+
+/* puhelin */
+@media screen and (max-width: 400px) {
+    .loginContainer {
+        width: 100%;
+        margin-top: 10em;
+    }
+}
