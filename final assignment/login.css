@@ -65,7 +65,7 @@ body {
     
 
 /* tabletti */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .loginContainer {
         width: 100%;
         margin-top: 10em;
@@ -73,7 +73,7 @@ body {
 }
 
 /* puhelin */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .loginContainer {
         width: 100%;
         margin-top: 10em;

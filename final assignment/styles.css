@@ -1,3 +1,8 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
 .containerHeader {
     margin-top: 20em;
     margin-bottom: 20em;
@@ -8,12 +13,61 @@
 
 .productContainer {
     margin: 5em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    border-radius: 2em;
+    height: 200px; /*Väliaikainen*/
 }
 
 .productButton {
     background-color: white;
     color: #ff5959;
     border-radius: 2em;
+}
+
+.buttonFilled {
+    background-color: #ff5959;
+    color: white;
+    border-radius: 2em;
+
+}
+
+.buttonOutline {
+    border-color: #ff5959;
+    color:#ff5959;
+    border-radius: 2em;
+}
+
+.infoContainer {
+    padding: 2em;
+    margin: 2em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2em;
+}
+
+.cartContainer {
+    padding: 2em;
+    margin: 2em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2em;
+}
+
+.infoImage {
+    width: 10em; /*Väliaikainen*/
+    height: 10em; /*Väliaikainen*/
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.infoText {
+    text-align: left;
+    margin-left: 5em;
+}
+
+.mainFooter {
+    background-color: #ff5959;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
 }
 
   
