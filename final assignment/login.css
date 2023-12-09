@@ -20,7 +20,7 @@ body {
 .loginContainer {
     background-color: white;
     width: 40%;
-    margin-top: 10em;
+    margin-top: calc(10vh + 60px);
     border: 1px solid #ff5959;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     padding: 2em;

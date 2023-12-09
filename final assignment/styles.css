@@ -12,6 +12,19 @@ body {
     text-align: left;
 }
 
+.containerHeaderImage {
+    margin-top: 20em;
+    margin-bottom: 20em;
+    margin-right: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+
+.roundedImage {
+    border-radius: 20px;
+}
+
 .containerHeader h1 {
     font-size: 300%;
     font-weight: bold;
@@ -48,6 +61,7 @@ body {
 .infoContainer {
     padding: 2em;
     margin: 2em;
+    margin-top: 4em;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2em;
 }
@@ -57,12 +71,6 @@ body {
     margin: 2em;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2em;
-}
-
-.infoImage {
-    width: 10em; /*Väliaikainen*/
-    height: 10em; /*Väliaikainen*/
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .infoText {
@@ -75,6 +83,10 @@ body {
     margin-top: auto;
     display: flex;
     flex-direction: column;
+}
+
+.iconFooter {
+    margin-right: 0.3em;
 }
 
   
