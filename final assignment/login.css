@@ -43,6 +43,7 @@ body {
     border-color: #ff5959;
     color:#ff5959;
     border-radius: 2em;
+    margin-top: 0.4em;
 }
 
 .form-control:focus {
@@ -69,7 +70,8 @@ body {
 @media screen and (max-width: 1200px) {
     .loginContainer {
         width: 100%;
-        margin-top: 10em;
+        margin: 3em, 10em, 3em, 10em;
+        width:90%;
     }
 }
 
@@ -77,6 +79,7 @@ body {
 @media screen and (max-width: 600px) {
     .loginContainer {
         width: 100%;
-        margin-top: 10em;
+        margin: 3em, 10em, 3em, 10em;
+        width:90%;
     }
 }
