@@ -5,16 +5,16 @@ body {
 }
 
 .containerHeader {
-    margin-top: 20em;
-    margin-bottom: 20em;
+    margin-top: 10em;
+    margin-bottom: 5em;
     margin-left: 7em;
     color: white;
     text-align: left;
 }
 
 .containerHeaderImage {
-    margin-top: 20em;
-    margin-bottom: 20em;
+    margin-top: 10em;
+    margin-bottom: 5em;
     margin-right: 0;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -43,6 +43,13 @@ body {
     background-color: white;
     color: #ff5959;
     border-radius: 2em;
+}
+
+.productButtonRed {
+    background-color: #ff5959;
+    color: white;
+    border-radius: 2em;
+
 }
 
 .buttonFilled {
@@ -80,9 +87,9 @@ body {
 
 .mainFooter {
     background-color: #ff5959;
-    margin-top: auto;
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 .iconFooter {
