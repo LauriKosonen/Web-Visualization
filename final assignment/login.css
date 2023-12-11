@@ -4,6 +4,16 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+a.nav-link:hover {
+    color: white !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+a.nav-link.active {
+    color: white !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
 .background-container {
     background-image: url('./media/login_background.svg');
     background-repeat: no-repeat;
@@ -57,11 +67,6 @@ body {
 
 .custom-control-input:checked {
     border-color: #ff5959;
-    background-color: #ff5959;
-}
-
-/* Footer */
-.loginFooter {
     background-color: #ff5959;
 }
     

@@ -4,6 +4,16 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+a.nav-link:hover {
+    color: white !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+a.nav-link.active {
+    color: white !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
 .containerHeader {
     margin-top: 10em;
     margin-bottom: 5em;
@@ -90,6 +100,7 @@ body {
     display: flex;
     flex-direction: column;
     color: white;
+    margin-top: 5em;
 }
 
 .iconFooter {
