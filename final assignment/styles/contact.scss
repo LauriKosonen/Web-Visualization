@@ -1,0 +1,83 @@
+@import 'colors';
+@import 'mixins';
+
+.formContainer {
+  background-color: $white-color;
+  width: 60%;
+  margin-top: 2em;
+  border: 1px solid $primary-color;
+  @include box-shadow(0 5px 10px $shadow-color);
+  padding: 2em;
+  @include border-radius(2em);
+}
+
+.formField, .formFieldBig {
+  @include border-radius(2em);
+  border: 1px solid $primary-color;
+
+  &.formFieldBig {
+    @include border-radius(1em);
+  }
+}
+
+.formButton {
+  background-color: $primary-color;
+  color: white;
+  @include border-radius(2em);
+}
+
+.form-control:focus {
+  border-color: $primary-color;
+  box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
+}
+
+.form-check-input {
+  border-color: $primary-color;
+
+  &:checked {
+    border-color: $primary-color;
+    background-color: $primary-color;
+  }
+}
+
+.custom-control-input {
+  border-color: #ced4da;
+
+  &:checked {
+    border-color: $primary-color;
+    background-color: $primary-color;
+  }
+}
+
+.contactUs {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* tabletti */
+@media screen and (max-width: 1200px) {
+  .formContainer {
+      width: 100%;
+      margin: 3em, 10em, 3em, 10em;
+      width:90%;
+  }
+  .contactUs {
+      margin-top: 3em;
+      padding: 2em;
+  }
+}
+
+/* puhelin */
+@media screen and (max-width: 600px) {
+  .formContainer {
+      width: 100%;
+      margin: 3em, 10em, 3em, 10em;
+      width:90%;
+  }
+  .contactUs {
+      margin-top: 3em;
+      padding: 2em;
+  }
+}

@@ -1,0 +1,117 @@
+// $primary-color: #ff5959;  /*variablet */
+// $white-color: white;
+// $shadow-color: rgba(0, 0, 0, 0.1);
+@import 'colors';
+@import 'mixins';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+blockquote {
+  @include block-quote;
+}
+
+a.nav-link:hover, a.nav-link.active {
+  color: $white-color !important;
+  text-shadow: 0 0 10px rgba($white-color, 0.5);
+}
+
+.containerHeader, .containerHeaderImage {
+  margin-top: 10em;
+  margin-bottom: 4em;
+  color: $white-color;
+  text-align: left;
+}
+
+.containerHeader {
+  margin-left: 5em;
+  margin-right: 1.5em;
+  padding: 1em;
+}
+
+.containerHeaderImage {
+  margin-right: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+
+.roundedImage {
+    @include border-radius(20px);
+}
+
+.containerHeader h1 {
+  font-size: 300%;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.productContainer, .infoContainer, .cartContainer {
+  margin: 2em;
+  @include box-shadow(0 5px 10px $shadow-color);
+  @include border-radius(2em);
+}
+
+.productContainer {
+  padding: 2em;
+  height: 400px; /* Väliaikainen */
+}
+
+.productButton, .productButtonRed, .buttonFilled, .buttonOutline {
+    @include border-radius(2em);
+}
+
+.productButton {
+  background-color: $white-color;
+  color: $primary-color;
+}
+
+.productButtonRed {
+  background-color: $primary-color;
+  color: $white-color;
+}
+
+.buttonFilled {
+  background-color: $primary-color;
+  color: $white-color;
+}
+
+.buttonOutline {
+  border-color: $primary-color;
+  color: $primary-color;
+}
+
+.infoContainer {
+    padding: 2em;
+    margin: 2em;
+    margin-top: 4em;
+    @include border-radius(2em);
+}
+
+
+.infoText {
+  text-align: left;
+  margin-left: 5em;
+}
+
+.cartContainer {
+    padding: 2em;
+    margin: 2em;
+    @include border-radius(2em);
+}
+
+
+.mainFooter {
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  color: $white-color;
+  margin-top: 5em;
+}
+
+.iconFooter {
+  margin-right: 0.3em;
+}

@@ -1,73 +1,86 @@
+/*variablet */
+/*variablet */
 .formContainer {
-    background-color: white;
-    width: 60%;
-    margin-top: 2em;
-    border: 1px solid #ff5959;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    padding: 2em;
-    border-radius: 2em;
+  background-color: white;
+  width: 60%;
+  margin-top: 2em;
+  border: 1px solid #ff5959;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
 }
 
-.formField {
-    border-radius: 2em;
-    border: 1px solid #ff5959;
+.formField, .formFieldBig {
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  border: 1px solid #ff5959;
 }
-
-.formFieldBig {
-    border-radius: 1em;
-    border: 1px solid #ff5959;
+.formField.formFieldBig, .formFieldBig.formFieldBig {
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
 }
 
 .formButton {
-    background-color: #ff5959;
-    color: white;
-    border-radius: 2em;
-
+  background-color: #ff5959;
+  color: white;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
 }
 
 .form-control:focus {
-    border-color: #ff5959;
-    box-shadow: 0 0 0 0.2rem rgba(255, 89, 89, 0.25);
+  border-color: #ff5959;
+  box-shadow: 0 0 0 0.2rem rgba(255, 89, 89, 0.25);
+}
+
+.form-check-input {
+  border-color: #ff5959;
+}
+.form-check-input:checked {
+  border-color: #ff5959;
+  background-color: #ff5959;
 }
 
 .custom-control-input {
-    border-color: #ced4da;
+  border-color: #ced4da;
 }
-
 .custom-control-input:checked {
-    border-color: #ff5959;
-    background-color: #ff5959;
+  border-color: #ff5959;
+  background-color: #ff5959;
 }
 
 .contactUs {
-    margin-right: 0;
-    margin-left: 0;
-    padding-right: 0;
-    padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 /* tabletti */
 @media screen and (max-width: 1200px) {
-    .formContainer {
-        width: 100%;
-        margin: 3em, 10em, 3em, 10em;
-        width:90%;
-    }
-    .contactUs {
-        margin-top: 3em;
-        padding: 2em;
-    }
+  .formContainer {
+    width: 100%;
+    margin: 3em, 10em, 3em, 10em;
+    width: 90%;
+  }
+  .contactUs {
+    margin-top: 3em;
+    padding: 2em;
+  }
 }
-
 /* puhelin */
 @media screen and (max-width: 600px) {
-    .formContainer {
-        width: 100%;
-        margin: 3em, 10em, 3em, 10em;
-        width:90%;
-    }
-    .contactUs {
-        margin-top: 3em;
-        padding: 2em;
-    }
-}
+  .formContainer {
+    width: 100%;
+    margin: 3em, 10em, 3em, 10em;
+    width: 90%;
+  }
+  .contactUs {
+    margin-top: 3em;
+    padding: 2em;
+  }
+}/*# sourceMappingURL=contact.css.map */

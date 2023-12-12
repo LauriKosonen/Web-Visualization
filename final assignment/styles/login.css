@@ -15,7 +15,7 @@ a.nav-link.active {
 }
 
 .background-container {
-    background-image: url('./media/login_background.svg');
+    background-image: url('../media/login_background.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -31,6 +31,7 @@ a.nav-link.active {
     background-color: white;
     width: 40%;
     margin-top: calc(10vh + 60px);
+    margin-bottom: 2em;
     border: 1px solid #ff5959;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     padding: 2em;
