@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*variablet */
 /*variablet */
 body {
@@ -11,6 +10,8 @@ blockquote {
   font-style: italic;
   font-size: 150%;
   margin-top: 2em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
   text-align: center;
   color: grey;
 }
@@ -52,17 +53,21 @@ a.nav-link:hover, a.nav-link.active {
   margin-top: 1em;
 }
 
+.planText {
+  padding: 1em;
+}
+
 .productContainer, .infoContainer, .cartContainer {
   margin: 2em;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 2em;
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
+  padding: 1.5em;
 }
 
 .productContainer {
-  padding: 2em;
-  height: 400px; /* Väliaikainen */
+  padding: 1.5em;
 }
 
 .productButton, .productButtonRed, .buttonFilled, .buttonOutline {
@@ -95,6 +100,7 @@ a.nav-link:hover, a.nav-link.active {
   padding: 2em;
   margin: 2em;
   margin-top: 4em;
+  margin-bottom: 1em;
   border-radius: 2em;
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
@@ -102,7 +108,12 @@ a.nav-link:hover, a.nav-link.active {
 
 .infoText {
   text-align: left;
-  margin-left: 5em;
+  margin-left: 3em;
+}
+
+.infoText2 {
+  text-align: left;
+  margin-left: 1em;
 }
 
 .cartContainer {
@@ -123,4 +134,25 @@ a.nav-link:hover, a.nav-link.active {
 
 .iconFooter {
   margin-right: 0.3em;
+}
+
+/* puhelin */
+@media screen and (min-width: 420px) and (max-width: 599px) {
+  .productContainer {
+    width: 90%;
+    margin: 2em auto;
+  }
+  .planText {
+    padding: 1.5em;
+  }
+}
+/* tabletti */
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .productContainer {
+    width: 90%;
+    margin: 1em;
+  }
+  .planText {
+    padding: 1.5em;
+  }
 }/*# sourceMappingURL=main.css.map */

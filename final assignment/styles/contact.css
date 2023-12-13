@@ -3,7 +3,7 @@
 .formContainer {
   background-color: white;
   width: 60%;
-  margin-top: 2em;
+  margin-top: 0.5em;
   border: 1px solid #ff5959;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   padding: 2em;
@@ -54,33 +54,34 @@
 }
 
 .contactUs {
-  margin-right: 0;
-  margin-left: 0;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 2em;
+  max-width: 100%;
+  overflow-x: hidden;
+  text-align: center;
+  margin-top: 6em;
+  color: #ff5959;
 }
 
 /* tabletti */
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
   .formContainer {
     width: 100%;
-    margin: 3em, 10em, 3em, 10em;
-    width: 90%;
+    width: 70%;
+    margin-top: 0.5em;
   }
   .contactUs {
-    margin-top: 3em;
     padding: 2em;
+    width: 80%;
   }
 }
 /* puhelin */
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 420px) and (max-width: 599px) {
   .formContainer {
     width: 100%;
-    margin: 3em, 10em, 3em, 10em;
     width: 90%;
+    margin-top: 0.5em;
   }
   .contactUs {
-    margin-top: 3em;
     padding: 2em;
   }
 }/*# sourceMappingURL=contact.css.map */
