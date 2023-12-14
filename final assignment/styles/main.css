@@ -45,6 +45,8 @@ a.nav-link:hover, a.nav-link.active {
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
+  height: 100%;
+  width: auto;
 }
 
 .containerHeader h1 {
@@ -108,7 +110,7 @@ a.nav-link:hover, a.nav-link.active {
 
 .infoText {
   text-align: left;
-  margin-left: 3em;
+  margin-left: 5em;
 }
 
 .infoText2 {
@@ -137,7 +139,7 @@ a.nav-link:hover, a.nav-link.active {
 }
 
 /* puhelin */
-@media screen and (min-width: 420px) and (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .productContainer {
     width: 90%;
     margin: 2em auto;
@@ -145,14 +147,39 @@ a.nav-link:hover, a.nav-link.active {
   .planText {
     padding: 1.5em;
   }
+  .infoContainer {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    margin-top: 1em;
+  }
+  .infoText {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .infoText2 {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 /* tabletti */
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (max-width: 1280px) {
   .productContainer {
     width: 90%;
-    margin: 1em;
+    margin: 2em auto;
   }
   .planText {
     padding: 1.5em;
+  }
+  .infoContainer {
+    flex-direction: row;
+  }
+  .infoText {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .infoText2 {
+    width: 100%;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=main.css.map */
