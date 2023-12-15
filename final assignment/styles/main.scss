@@ -104,7 +104,7 @@ a.nav-link:hover, a.nav-link.active {
 
 
 .productButtonRed {
-  @include redButton($primary-color, $white-color, 5%, 40%);
+  @include redButton($primary-color, $white-color, 5%, 30%);
 }
 
 // .buttonFilled {
