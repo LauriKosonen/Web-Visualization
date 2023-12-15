@@ -14,10 +14,29 @@ blockquote {
   @include block-quote;
 }
 
+//nav alkaa
+
 a.nav-link:hover, a.nav-link.active {
   color: $white-color !important;
   text-shadow: 0 0 10px rgba($white-color, 0.5);
 }
+
+.navbar-brand:hover {
+  text-shadow: 0 0 10px rgba($white-color, 0.5); 
+}
+
+//nav animaatiot
+
+.navbar-brand {
+  transition: text-shadow 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-nav a {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+// nav loppuu
+
 
 .containerHeader {
   max-width: 100%;
@@ -48,7 +67,6 @@ a.nav-link:hover, a.nav-link.active {
 .roundedImage {
   @include border-radius(20px);
   height: 100%;
-  width: auto;
 }
 
 .containerHeader h1 {
@@ -73,33 +91,37 @@ a.nav-link:hover, a.nav-link.active {
   margin: 2em;
 }
 
-.productButton, .productButtonRed, .buttonFilled, .buttonOutline {
+
+// napit alkaa (mixin)
+
+.productButton, .productButtonRed, .buttonFilled, .buttonOutline, .contactButton {
   @include border-radius(2em);
 }
 
-.productButton {
-  background-color: $white-color;
-  color: $primary-color;
+.contactButton {
+  @include redButton($white-color, $primary-color, 5%, 30%);
 }
+
 
 .productButtonRed {
-  background-color: $primary-color;
-  color: $white-color;
+  @include redButton($primary-color, $white-color, 5%, 40%);
 }
 
-.buttonFilled {
-  background-color: $primary-color;
-  color: $white-color;
-}
+// .buttonFilled {
+//   background-color: $primary-color;
+//   color: $white-color;
+// }
 
-.buttonOutline {
-  border-color: $primary-color;
-  color: $primary-color;
-}
+// .buttonOutline {
+//   border-color: $primary-color;
+//   color: $primary-color;
+// }
+
+//napit päättyy
 
 .infoContainer {
   padding: 2em;
-  margin: 2em;
+  margin: 1em;
   margin-top: 4em;
   margin-bottom: 1em;
   @include border-radius(2em);
@@ -108,12 +130,13 @@ a.nav-link:hover, a.nav-link.active {
 
 .infoText {
   text-align: left;
-  margin-left: 5em;
+  margin-left: 2em;
 }
 
 .infoText2 {
   text-align: left;
   margin-left: 1em;
+  padding: 1em;
 }
 
 .cartContainer {
@@ -128,7 +151,7 @@ a.nav-link:hover, a.nav-link.active {
   display: flex;
   flex-direction: column;
   color: $white-color;
-  margin-top: 5em;
+  margin-top: 3em;
 }
 
 .iconFooter {
@@ -137,7 +160,7 @@ a.nav-link:hover, a.nav-link.active {
 
 
 /* puhelin */
-@media screen and (max-width:599px){
+@media screen and (max-width:600px){
   .containerHeaderImage {
     border-radius: 0;
     margin-top: 1.3em;

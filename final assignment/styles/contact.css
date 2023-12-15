@@ -27,9 +27,18 @@
 .formButton {
   background-color: #ff5959;
   color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 2em;
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
+}
+.formButton:hover {
+  background-color: #ff4040;
+  color: white;
+}
+.formButton:active {
+  background-color: #8c0000;
+  color: white;
 }
 
 .form-control:focus {
@@ -63,7 +72,7 @@
 }
 
 /* tabletti */
-@media screen and (min-width: 600px) and (max-width: 1000px) {
+@media screen and (min-width: 601px) and (max-width: 1000px) {
   .formContainer {
     width: 100%;
     width: 70%;
@@ -75,7 +84,7 @@
   }
 }
 /* puhelin */
-@media screen and (min-width: 420px) and (max-width: 599px) {
+@media screen and (max-width: 600px) {
   .formContainer {
     width: 100%;
     width: 90%;

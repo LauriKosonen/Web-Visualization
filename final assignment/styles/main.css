@@ -21,6 +21,18 @@ a.nav-link:hover, a.nav-link.active {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
+.navbar-brand:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.navbar-brand {
+  transition: text-shadow 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-nav a {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
 .containerHeader {
   max-width: 100%;
   margin-top: 4em;
@@ -53,7 +65,6 @@ a.nav-link:hover, a.nav-link.active {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   height: 100%;
-  width: auto;
 }
 
 .containerHeader h1 {
@@ -80,35 +91,43 @@ a.nav-link:hover, a.nav-link.active {
   margin: 2em;
 }
 
-.productButton, .productButtonRed, .buttonFilled, .buttonOutline {
+.productButton, .productButtonRed, .buttonFilled, .buttonOutline, .contactButton {
   border-radius: 2em;
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
 }
 
-.productButton {
+.contactButton {
   background-color: white;
+  color: #ff5959;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.contactButton:hover {
+  background-color: #f2f2f2;
+  color: #ff5959;
+}
+.contactButton:active {
+  background-color: #b3b3b3;
   color: #ff5959;
 }
 
 .productButtonRed {
   background-color: #ff5959;
   color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-.buttonFilled {
-  background-color: #ff5959;
+.productButtonRed:hover {
+  background-color: #ff4040;
   color: white;
 }
-
-.buttonOutline {
-  border-color: #ff5959;
-  color: #ff5959;
+.productButtonRed:active {
+  background-color: #8c0000;
+  color: white;
 }
 
 .infoContainer {
   padding: 2em;
-  margin: 2em;
+  margin: 1em;
   margin-top: 4em;
   margin-bottom: 1em;
   border-radius: 2em;
@@ -118,12 +137,13 @@ a.nav-link:hover, a.nav-link.active {
 
 .infoText {
   text-align: left;
-  margin-left: 5em;
+  margin-left: 2em;
 }
 
 .infoText2 {
   text-align: left;
   margin-left: 1em;
+  padding: 1em;
 }
 
 .cartContainer {
@@ -139,7 +159,7 @@ a.nav-link:hover, a.nav-link.active {
   display: flex;
   flex-direction: column;
   color: white;
-  margin-top: 5em;
+  margin-top: 3em;
 }
 
 .iconFooter {
@@ -147,7 +167,7 @@ a.nav-link:hover, a.nav-link.active {
 }
 
 /* puhelin */
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 600px) {
   .containerHeaderImage {
     border-radius: 0;
     margin-top: 1.3em;
