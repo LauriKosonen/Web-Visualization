@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*variablet */
 /*variablet */
 body {
@@ -105,10 +106,21 @@ a.nav-link.active {
   box-shadow: 0 0 0 0.2rem rgba(255, 89, 89, 0.25);
 }
 
-.custom-control-input {
-  border-color: #ced4da;
-}
-.custom-control-input:checked {
-  border-color: #ff5959;
+.form-check-input:checked {
   background-color: #ff5959;
+  border-color: #ff5959;
+  color: white;
+  box-shadow: 0 0 0 0.2rem rgba(255, 89, 89, 0.25);
+}
+
+.form-check-input:checked ~ .form-check-label::before {
+  content: "✓";
+  font-size: 14px;
+  color: white;
+}
+
+.form-check-input:not(:checked) {
+  background-color: white;
+  border-color: #ff5959;
+  box-shadow: none;
 }/*# sourceMappingURL=login.css.map */

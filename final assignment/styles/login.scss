@@ -80,12 +80,22 @@ a.nav-link.active {
     box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
 }
 
-.custom-control-input {
-    border-color: #ced4da;
-
-    &:checked {
-        border-color: $primary-color;
-        background-color: $primary-color;
-    }
+// punainen checkbox
+.form-check-input:checked {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $white-color;
+    box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
 }
 
+.form-check-input:checked ~ .form-check-label::before {
+    content: '\2713';
+    font-size: 14px;
+    color: $white-color;
+}
+
+.form-check-input:not(:checked) {
+    background-color: $white-color;
+    border-color: $primary-color;
+    box-shadow: none;
+}
