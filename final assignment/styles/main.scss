@@ -57,13 +57,15 @@ a.nav-link:hover, a.nav-link.active {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   overflow: hidden;
+  justify-content: center;  // tarkista isolla näytöllä
+  vertical-align: middle;  //tarkista isolla näytöllä
 }
 .headerText {
   margin-top: 5em;
   margin-left: 5em;
   margin-bottom: 2em;
-  justify-content: center;
-  vertical-align: middle;
+  justify-content: center;  // tarkista isolla näytöllä
+  vertical-align: middle;  // tarkista isolla näytöllä
 }
 
 .roundedImage {

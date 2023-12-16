@@ -52,6 +52,8 @@ a.nav-link:hover, a.nav-link.active {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   overflow: hidden;
+  justify-content: center;
+  vertical-align: middle;
 }
 
 .headerText {
