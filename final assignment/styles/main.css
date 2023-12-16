@@ -195,7 +195,7 @@ a.nav-link:hover, a.nav-link.active {
   }
 }
 /* tabletti */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
   .containerHeaderImage {
     border-radius: 0;
     margin-top: 1.3em;
