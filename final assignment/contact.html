@@ -44,7 +44,7 @@
     </nav>
     <!-- Nav loppuu-->
 
-    <div class="container-fluid contactUs">
+    <section class="container-fluid contactUs">
       <div class="row">
         <div class="col">
           <h1>Contact Us</h1>
@@ -52,10 +52,10 @@
           Send us a message and we'll get in touch!</p>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- form alkaa-->
-    <div class="container formContainer">
+    <section class="container formContainer">
       <form class="row g-3">
         <div class="col-md-6">
           <label for="inputName" class="form-label" style="color:#ff5959">Your name</label>
@@ -95,7 +95,7 @@
           <button class="btn formButton" type="button" data-bs-toggle="modal" data-bs-target="#myModal">Send</button>
         </div>
       </form>
-    </div>
+    </section>
     <!-- Form loppuu -->
     <!-- Bootstrap Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -150,16 +150,12 @@
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
   
-        // Optionally, you can add additional script for handling form submission and showing the modal
         const form = document.getElementById('myForm');
         form.addEventListener('submit', function(event) {
-          // Add your form submission logic here
   
-          // Show the modal
           const myModal = new bootstrap.Modal(document.getElementById('myModal'));
           myModal.show();
   
-          // Prevent the default form submission behavior
           event.preventDefault();
         });
       });
