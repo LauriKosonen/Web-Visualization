@@ -74,7 +74,7 @@ Navigointipalkin linkkeihin lisäsin myös vastaavan hehku animaation kun hiiren
 Muut animaatiot ovat Bootstrapin omia animaatioita, enkä kokenut tarpeelliseksi lähteä niitä muuttamaan sillä ne näyttävät mielestäni hyviltä sellaisinaan.
 
 ### Semanttinen rakenne.
-Käytin semanttisia rakenteita kuten <header>, <footer>, <nav> ja <section> pakkaamaan eri osia html dokumentista jotta selaimet saavat paremman käsityksen sivustoni sisällöstä. Koodin lukeminen on myös selkeämpää semanttisella rakenteella.
+Käytin semanttisia rakenteita kuten header, footer, nav ja section. Näillä käärin eri osia html dokumentista jotta selaimet saavat paremman käsityksen sivustoni sisällöstä. Koodin lukeminen on myös selkeämpää semanttisella rakenteella.
 
 ### FontAwesome
 Käytin FontAwesome ikoneja sivuston footerissa (some logot ja pienet ikonit yhteustietojen edessä) sekä Contact Us sivun modalissa (checkmark). Nämä tekevät sivustosta näyttävämmän näköisen, sekä parantavat luettavuutta.
@@ -82,14 +82,32 @@ Käytin FontAwesome ikoneja sivuston footerissa (some logot ja pienet ikonit yht
 ## Yleiset mietteet. Mitä opin?
 Sivuston kasaamiseen kului lopulta enemmän aikaa kuin oletin. Sain pystytettyä sivuston rakenteen nopeasti bootstrapin avulla, mutta suurin osa työhön käytetystä ajasta kului kuitenkin margineiden ja skaalautuvuuden hienosäätöön, sekä uusien tekniikoiden opettelemiseen (kuten bootstrapin eri toiminnot ja sen vakio tyylien muuttaminen sekä taustakuvan lisääminen).
 
-Tätä projektia tehdessä vahvistin kurssin aikana oppimiani taitoja, ja palautin mieleen 
+Tätä projektia tehdessä vahvistin kurssin aikana oppimiani taitoja, ja palautin mieleen aikaisemmilla kursseilla oppimiani taitoja ja tekniikoita.
 
 ## Itsearviointi
 
 ### Missä onnistuin:
+* Grid layoutin luominen bootstrapilla sujui hyvin.
+
+* Sivusto tuntuu skaalautuvan hyvin eri selaimissa. Testasin skaalautuvuuden Chromessa, Edgessä, Firefoxissa sekä Safarissa (tabletilla). Sivusto näyttää myös hyvältä omalla puhelimellani, joten olen erittäin tyytyväinen siihen kuinka sivusto skaalautuu pienemmille laitteille.
+
+* Kuvien skaalautumisessa minulla oli alkuun ongelmia. Kuvien suhde ei pysynyt samana kaikilla näytön leveyksilä mutta onnistuin kuitenkin ratkaisemaan tämän ongelman Bootstrapin row- ja column asetuksia säätämällä ja muokkaamalla omia CSS tyylejä.
+
+* Sivusto on minusta selkeä ja hyvin luettavissa. Tyylit ovat johdonmukaiset kaikkien sivujen ja elementtien välillä. Sivusto on myös minusta visuaalisesti näyttävä.
+
+* Sivuston responsiivisuus on minuista myös hyvällä tasolla. Nappuloissa on animaatiot, aktivisella sivulla on navigaatio palkissa pieni hehku, ja contact us sivun "send" nappula avaa modalin joka kertoo käyttäjälle että viesti on vastaanotettu.
+
+* Onnistuin myös lopulta muuttamaan login formin checkboxin värin punaiseksi. Puoliväli palautteessa tämä oli vielä sininen, joka ilmeisesti oli joko bootstrapin tai selaimen vakio väri. Extensiivisen googlailun ja testailun jälkeen onnistuin kuitenkin tuon värin lopulta vaihtamaan.
 
 
 ### Mihin jäi parannettavaa:
-
+En ole täysin tyytyväinen siihen kuinka etusivun header osio skaalautuu näytön leveyden kasvaessa. Tarkoitus oli pitää headerin teksti samassa linjassa headerin kuvan kanssa näytön koosta riippumatta, mutta en tässä täysin onnistunut. Koitin korjata tätä ongelmaa Bootstrapin avulla sekä css tyylien avulla, mutta en millään kombinaatiolla saanut tätä toimimaan kunnolla. Lisäsin tätä varten lopulta uuden media screenin helpottamaan tilannetta, mutta koska itse tein tämän projetin 14 tuuman läppärillä, en oikein osaa sanoa miltä tuo header osio näyttää isommilla näytöillä.
+Samasta syystä en ole täysin varma kuinka hyvin login form on keskitettynä login sivulla isommilla näytöillä. (mainitsit tästä puoliväli palautteessa). Omalla keskikokoisella näytöllä skaalautuvuus ja sommittelu näyttää kuitenkin hyvältä.
 
 ### Arvosana:
+
+Käytin sivustoa tehdessä tekniikoita kaikista kurssin aihealueista, joten olettaisin että tämä työ on vitosen arvoinen tai ainakin erittäin lähellä sitä. Olen itse erittäin tyytyväinen lopputulokseen ja se on mielestäni selkeä parannus vastaavaan loppuprojektiini web- tekniikat kurssilta, josta myös sain arvosanaksi vitosen.
+
+Arvosanani varmaankin riippuu eniten siitä kuinka iso ongelma headerin skaalautuvuus on, ja käytinkö tarpeeksi SASS ominaisuuksia. Mielestäni käytin Variableja ja mixineitä kaikkiin niihin tarkoituksiin joissa niiden käytöstä oli hyötyä.
+
+Itse antaisin siis tälle työlle arvosanan: 5
