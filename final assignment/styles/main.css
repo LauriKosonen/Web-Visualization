@@ -44,24 +44,26 @@ a.nav-link:hover, a.nav-link.active {
   padding-left: 0;
   padding-right: 0;
   height: 100vh;
-  display: flex; /* Add flex display to enable flex properties */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
 }
 
 .containerHeaderImage {
-  max-width: 100%;
-  width: 100%;
+  margin-right: 0;
+  margin-bottom: 3em;
+  margin-top: 5em;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  overflow: hidden;
+  justify-content: center;
+  vertical-align: middle;
 }
 
 .headerText {
-  text-align: left; /* Center text within the container */
-  margin-left: 3em;
-  margin-top: 2em; /* Adjust margin as needed */
+  margin-top: 5em;
+  margin-left: 5em;
   margin-bottom: 2em;
-  padding: 0 1em; /* Add padding for better spacing */
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .roundedImage {
