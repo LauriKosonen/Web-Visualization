@@ -60,7 +60,9 @@ a.nav-link:hover, a.nav-link.active {
 .headerText {
   margin-top: 7em;
   margin-left: 5em;
+  margin-right: 1em;
   margin-bottom: 2em;
+  padding: 1em;
   justify-content: center;
   align-items: center;
   vertical-align: middle;
