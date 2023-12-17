@@ -252,4 +252,9 @@ a.nav-link:hover, a.nav-link.active {
   .navbar-brand img {
     margin-left: 0.2em !important;
   }
+}
+@media screen and (min-width: 1281px) {
+  .headerText {
+    margin-top: 10em;
+  }
 }/*# sourceMappingURL=main.css.map */
