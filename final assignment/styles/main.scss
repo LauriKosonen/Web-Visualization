@@ -58,7 +58,7 @@ a.nav-link:hover, a.nav-link.active {
   vertical-align: middle;  //tarkista isolla näytöllä
 }
 .headerText {
-  margin-top: 5em;
+  margin-top: 7em;
   margin-left: 5em;
   margin-bottom: 2em;
   justify-content: center;  // tarkista isolla näytöllä
@@ -241,6 +241,8 @@ a.nav-link:hover, a.nav-link.active {
 @media screen and (min-width:1281px) {
   .headerText{
     margin-top: 15em;
+  }
+  .headerText, p {
     font-weight: bold;
   }
 }
