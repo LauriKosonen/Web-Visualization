@@ -41,7 +41,7 @@ a.nav-link.active {
 .loginContainer {
   background-color: white;
   width: 40%;
-  margin-top: calc(10vh + 55px);
+  margin-top: calc(10vh + 60px);
   margin-bottom: 2em;
   border: 1px solid #ff5959;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -52,11 +52,17 @@ a.nav-link.active {
 @media screen and (max-width: 600px) {
   .loginContainer {
     width: 90%;
+    margin-top: 3em;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1000px) {
   .loginContainer {
     width: 70%;
+  }
+}
+@media screen and (min-width: 1281px) {
+  .loginContainer {
+    margin-top: calc(50vh - 180px);
   }
 }
 
