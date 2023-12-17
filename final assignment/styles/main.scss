@@ -44,6 +44,7 @@ a.nav-link:hover, a.nav-link.active {
   margin-right: 0; 
   padding-left: 0; 
   padding-right: 0;
+  height: 100vh;
 }
 
 .containerHeaderImage {
@@ -53,15 +54,16 @@ a.nav-link:hover, a.nav-link.active {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   overflow: hidden;
-  justify-content: center;  // tarkista isolla näytöllä
-  vertical-align: middle;  //tarkista isolla näytöllä
+  justify-content: center;  
+  vertical-align: middle;  
 }
 .headerText {
   margin-top: 5em;
   margin-left: 5em;
   margin-bottom: 2em;
-  justify-content: center;  // tarkista isolla näytöllä
-  vertical-align: middle;  // tarkista isolla näytöllä
+  justify-content: center; 
+  align-items: center;
+  vertical-align: middle; 
 }
 
 .roundedImage {
@@ -160,6 +162,9 @@ a.nav-link:hover, a.nav-link.active {
 
 /* puhelin */
 @media screen and (max-width:600px){
+  .containerHeader{
+    height: auto;
+  }
   .containerHeaderImage {
     border-radius: 0;
     margin-top: 1.3em;
@@ -193,6 +198,9 @@ a.nav-link:hover, a.nav-link.active {
 
 /* tabletti */
 @media screen and (max-width:992px) {
+  .containerHeader{
+    height: auto;
+  }
   .containerHeaderImage {
     border-radius: 0;
     margin-top: 1.3em;

@@ -43,6 +43,7 @@ a.nav-link:hover, a.nav-link.active {
   margin-right: 0;
   padding-left: 0;
   padding-right: 0;
+  height: 100vh;
 }
 
 .containerHeaderImage {
@@ -61,6 +62,7 @@ a.nav-link:hover, a.nav-link.active {
   margin-left: 5em;
   margin-bottom: 2em;
   justify-content: center;
+  align-items: center;
   vertical-align: middle;
 }
 
@@ -179,6 +181,9 @@ a.nav-link:hover, a.nav-link.active {
 
 /* puhelin */
 @media screen and (max-width: 600px) {
+  .containerHeader {
+    height: auto;
+  }
   .containerHeaderImage {
     border-radius: 0;
     margin-top: 1.3em;
@@ -211,6 +216,9 @@ a.nav-link:hover, a.nav-link.active {
 }
 /* tabletti */
 @media screen and (max-width: 992px) {
+  .containerHeader {
+    height: auto;
+  }
   .containerHeaderImage {
     border-radius: 0;
     margin-top: 1.3em;
