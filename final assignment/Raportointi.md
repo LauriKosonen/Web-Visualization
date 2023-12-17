@@ -53,7 +53,7 @@ Käytin Bootstrappia grid layoutin, navigaatio palkin, formien, containereiden, 
 Bootstrapin käyttöä opeteltiin aikaisemmin kurssilla, joten Bootstrapin valinta css kirjastoksi oli minulle luontaisin. Bootstrapin avulla responsiivisen layoutin, navigaatiopalkin ja formien luominen oli helppoa ja säästi todella paljon aikaa verrattuna siihen jos olisin itse tehnyt grid layoutin käyttäen felx boxeja. Bootstrapin avulla sain myös käännettyä kuvien ja tekstikenttien järjestystä mobiili näkymässä.
 
 ### CSS Preprocessors:
-Käytin SASS:ia CSS tiedostojen modulointiin. Yleisimmin käytetyistä tyyleistä kuten väreistä, varjoista tein variableja, jonka jälkeen tein Mixin tiedoston johon tallensin muita usein käytettyjä elementtejä: Bborder-radius, box-shadow, block-quote sekä nappulat ja niiden animaatiot. Tämän jälkeen niitä oli helppo kutsua tyylitiedostoissa ja html dokumenteissa.
+Käytin SASS:ia CSS tiedostojen modulointiin. Yleisimmin käytetyistä tyyleistä kuten väreistä ja varjoista tein variableja, jonka jälkeen tein Mixin tiedoston johon tallensin muita usein käytettyjä elementtejä: Bborder-radius, box-shadow, block-quote sekä nappulat ja niiden animaatiot. Tämän jälkeen niitä oli helppo kutsua tyylitiedostoissa ja html dokumenteissa.
 Lisäksi käytin SASS:ia selkeyttämään tyylitiedostojen sisältöä.
 
 ### CSS advanced:
@@ -103,6 +103,8 @@ Tätä projektia tehdessä vahvistin kurssin aikana oppimiani taitoja, ja palaut
 ### Mihin jäi parannettavaa:
 En ole täysin tyytyväinen siihen kuinka etusivun header osio skaalautuu näytön leveyden kasvaessa. Tarkoitus oli pitää headerin teksti samassa linjassa headerin kuvan kanssa näytön koosta riippumatta, mutta en tässä täysin onnistunut. Koitin korjata tätä ongelmaa Bootstrapin avulla sekä css tyylien avulla, mutta en millään kombinaatiolla saanut tätä toimimaan kunnolla. Lisäsin tätä varten lopulta uuden media screenin helpottamaan tilannetta, mutta koska itse tein tämän projetin 14 tuuman läppärillä, en oikein osaa sanoa miltä tuo header osio näyttää isommilla näytöillä.
 Samasta syystä en ole täysin varma kuinka hyvin login form on keskitettynä login sivulla isommilla näytöillä. (mainitsit tästä puoliväli palautteessa). Omalla keskikokoisella näytöllä skaalautuvuus ja sommittelu näyttää kuitenkin hyvältä.
+
+Koitin myös lisätä tooltipin kun hiiren vie navigaatiopalkissa "MySphere" linkin päälle. Tooltip olisi kertonut että "My Sphere" sivu aktivoituu kun sopimus on tehty ja käyttäjä on kirjautunut sisään. En kuitenkaan saanut tooltipiä näkymään.
 
 ### Arvosana:
 
