@@ -48,12 +48,12 @@ Työtehtävät:
 ## Käytetyt teknologiat
 
 ### CSS Kirjastot:
-Käytin Bootstrappia grid layoutin, navigaatio palkin, formien, containereiden, modaleideen ja nappuloiotten luomiseen.
+Käytin Bootstrapia grid layoutin, navigaatio palkin, formien, containereiden, modaleiden ja nappuloiotten luomiseen.
 
 Bootstrapin käyttöä opeteltiin aikaisemmin kurssilla, joten Bootstrapin valinta css kirjastoksi oli minulle luontaisin. Bootstrapin avulla responsiivisen layoutin, navigaatiopalkin ja formien luominen oli helppoa ja säästi todella paljon aikaa verrattuna siihen jos olisin itse tehnyt grid layoutin käyttäen felx boxeja. Bootstrapin avulla sain myös käännettyä kuvien ja tekstikenttien järjestystä mobiili näkymässä.
 
 ### CSS Preprocessors:
-Käytin SASS:ia CSS tiedostojen modulointiin. Yleisimmin käytetyistä tyyleistä kuten väreistä ja varjoista tein variableja, jonka jälkeen tein Mixin tiedoston johon tallensin muita usein käytettyjä elementtejä: Bborder-radius, box-shadow, block-quote sekä nappulat ja niiden animaatiot. Tämän jälkeen niitä oli helppo kutsua tyylitiedostoissa ja html dokumenteissa.
+Käytin SASS:ia CSS tiedostojen modulointiin. Yleisimmin käytetyistä tyyleistä kuten väreistä ja varjoista tein variableja, jonka jälkeen tein Mixin tiedoston johon tallensin muita usein käytettyjä elementtejä: border-radius, box-shadow, block-quote sekä nappulat ja niiden animaatiot. Tämän jälkeen niitä oli helppo kutsua tyylitiedostoissa ja html dokumenteissa.
 Lisäksi käytin SASS:ia selkeyttämään tyylitiedostojen sisältöä.
 
 ### CSS advanced:
@@ -77,12 +77,16 @@ Muut animaatiot ovat Bootstrapin omia animaatioita, enkä kokenut tarpeelliseksi
 Käytin semanttisia rakenteita kuten header, footer, nav ja section. Näillä käärin eri osia html dokumentista jotta selaimet saavat paremman käsityksen sivustoni sisällöstä. Koodin lukeminen on myös selkeämpää semanttisella rakenteella.
 
 ### FontAwesome
-Käytin FontAwesome ikoneja sivuston footerissa (some logot ja pienet ikonit yhteustietojen edessä) sekä Contact Us sivun modalissa (checkmark). Nämä tekevät sivustosta näyttävämmän näköisen, sekä parantavat luettavuutta.
+Käytin FontAwesome ikoneja sivuston footerissa (some logot ja pienet ikonit yhteystietojen edessä) sekä Contact Us sivun modalissa (checkmark). Nämä tekevät sivustosta näyttävämmän näköisen, sekä parantavat luettavuutta.
 
 ## Yleiset mietteet. Mitä opin?
-Sivuston kasaamiseen kului lopulta enemmän aikaa kuin oletin. Sain pystytettyä sivuston rakenteen nopeasti bootstrapin avulla, mutta suurin osa työhön käytetystä ajasta kului kuitenkin margineiden ja skaalautuvuuden hienosäätöön, sekä uusien tekniikoiden opettelemiseen (kuten bootstrapin eri toiminnot ja sen vakio tyylien muuttaminen sekä taustakuvan lisääminen).
+Sivuston kasaamiseen kului lopulta enemmän aikaa kuin oletin. Sain pystytettyä sivuston rakenteen nopeasti bootstrapin avulla, mutta suurin osa työhön käytetystä ajasta kului kuitenkin margineiden ja skaalautuvuuden hienosäätöön, sekä uusien tekniikoiden opettelemiseen (kuten bootstrapin eri toiminnot ja sen vakio tyylien muuttaminen, sekä taustakuvan lisääminen).
 
 Tätä projektia tehdessä vahvistin kurssin aikana oppimiani taitoja, ja palautin mieleen aikaisemmilla kursseilla oppimiani taitoja ja tekniikoita.
+
+Tärkeimmät asiat jotka opin ovat todennäköisesti SASS:n käyttö tyylitiedostojen moduloimiseen ja Bootstrapin käytön oppiminen ja soveltaminen. Kurssin SASS viikkotehtävä oli melko lyhyt, enkä silloin vielä täysin ymmärtänyt SASS:n käyttötarkoitusta. Mutta tämän projektin aikana huomasin kuinka paljon tyylitiedostoja voi putsata tekemällä usein käytetyistä tyyleistä variableja ja mixineitä. Tyylitiedostojen rivi määrä taisi vähentyä ainakin neljännesosalla SASS:n implementoinnin jälkeen.
+
+CSS kirjastoja viikkotehtävissä käytettiin vähän enemmän, mutta tämän projektin aikana pääsin syventymään Bootstrapiin vielä enemmän lisäämällä sivustolleni mm. modaleita ja skaalautuvia kuvia.
 
 ## Itsearviointi
 
@@ -91,7 +95,7 @@ Tätä projektia tehdessä vahvistin kurssin aikana oppimiani taitoja, ja palaut
 
 * Sivusto tuntuu skaalautuvan hyvin eri selaimissa. Testasin skaalautuvuuden Chromessa, Edgessä, Firefoxissa sekä Safarissa (tabletilla). Sivusto näyttää myös hyvältä omalla puhelimellani, joten olen erittäin tyytyväinen siihen kuinka sivusto skaalautuu pienemmille laitteille.
 
-* Kuvien skaalautumisessa minulla oli alkuun ongelmia. Kuvien suhde ei pysynyt samana kaikilla näytön leveyksilä mutta onnistuin kuitenkin ratkaisemaan tämän ongelman Bootstrapin row- ja column asetuksia säätämällä ja muokkaamalla omia CSS tyylejä.
+* Kuvien skaalautumisessa minulla oli alkuun ongelmia. Kuvien suhde ei pysynyt samana kaikilla näytön leveyksilä mutta onnistuin kuitenkin ratkaisemaan tämän ongelman Bootstrapin row- ja column asetuksia säätämällä ja muokkaamalla omia CSS/SASS tyylejä.
 
 * Sivusto on minusta selkeä ja hyvin luettavissa. Tyylit ovat johdonmukaiset kaikkien sivujen ja elementtien välillä. Sivusto on myös minusta visuaalisesti näyttävä.
 
@@ -108,7 +112,7 @@ Koitin myös lisätä tooltipin kun hiiren vie navigaatiopalkissa "MySphere" lin
 
 ### Arvosana:
 
-Käytin sivustoa tehdessä tekniikoita kaikista kurssin aihealueista, joten olettaisin että tämä työ on vitosen arvoinen tai ainakin erittäin lähellä sitä. Olen itse erittäin tyytyväinen lopputulokseen ja se on mielestäni selkeä parannus vastaavaan loppuprojektiini web- tekniikat kurssilta, josta myös sain arvosanaksi vitosen.
+Käytin sivustoa tehdessä tekniikoita kaikista kurssin aihealueista, joten olettaisin että tämä työ on vitosen arvoinen tai ainakin erittäin lähellä sitä. Olen itse erittäin tyytyväinen lopputulokseen ja se on mielestäni selkeä parannus vastaavaan harjoitustehtävääni web- tekniikat kurssilta, josta myös sain arvosanaksi vitosen.
 
 Arvosanani varmaankin riippuu eniten siitä kuinka iso ongelma headerin skaalautuvuus on, ja käytinkö tarpeeksi SASS ominaisuuksia. Mielestäni käytin Variableja ja mixineitä kaikkiin niihin tarkoituksiin joissa niiden käytöstä oli hyötyä.
 
