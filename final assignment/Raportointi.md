@@ -27,7 +27,7 @@ Työtunnit: noin 7-9h.
 Työtehtävät:
 
 * SASS otettu käyttöön. 
-* Tekstin ja kuvien lisäys. 
+* Tekstin ja kuvien lisäys. Tekstin luomiseen käytin apuna ChatGPT:tä.
 * Nappuloiden lisäys. 
 * Eniten käytetyt tyylit muutettu variableiksi ja mixineiksi.
 * Contact Us form lisätty
